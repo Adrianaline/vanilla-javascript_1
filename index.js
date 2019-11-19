@@ -1,6 +1,6 @@
-const calculator = {
-    power: function(a, b) {return a ** b}
+const title = document.querySelector('#title');
+function handleClick() {
+    title.style.color = 'blue';
 };
 
-const result = calculator.power(2, 0.5);
-console.log(result);
+title.addEventListener('click', handleClick);
