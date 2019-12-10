@@ -10,7 +10,7 @@ const toDoForm = document.querySelector('.js-toDoForm'),
         const btn = event.target;
         const li = btn.parentNode;
         toDoList.removeChild(li);
-        const cleanToDos = toDos.filter(function (toDo) {
+        const cleanToDos = toDos.filter(function(toDo) {
             return toDo.id !== parseInt(li.id);
         });
         console.log(cleanToDos);
@@ -32,7 +32,7 @@ const toDoForm = document.querySelector('.js-toDoForm'),
         span.innerText = text;
         li.appendChild(delBtn);
         li.appendChild(span);
-        li.id = 
+        li.id = newId;
         toDoList.appendChild(li);
         const toDoObj = {
             text: text,
